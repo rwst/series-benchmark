@@ -12,8 +12,7 @@ libraries.
 
 The tests are manipulations of univariate series with integer exponents
 and rational coefficients which is one of the main usages. The purpose
-at the moment is to see if piranha's generic implementation (which just
-truncates after polynomial manipulation, but uses multithreading) can
+at the moment is to see if piranha's generic implementation can
 compete with traditional dedicated univariate implementations.
 
 The main test at the moment is to multiply the expansions of sin(x)
