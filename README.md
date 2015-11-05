@@ -28,5 +28,5 @@ flint fmpq_poly_mul()            0.27       88
 flint fmpq_poly_mullow()         0.29       91
 piranha psin*pcos trunc.         0.69      690
 piranha psin*pcos no trunc.      5.0      4670
-pari sin(x)+cos(x)              11        1400
+pari sin(x)*cos(x)              11        1400
 ```
