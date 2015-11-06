@@ -24,9 +24,11 @@ System: 6x3GHz AMD Phenom with OpenSuSE Linux 13. Time is in milliseconds.
 ```
                                 N=100   N=1000      
 
-flint fmpq_poly_mul()            0.27       88
 flint fmpq_poly_mullow()         0.29       91
-piranha psin*pcos trunc.         0.69      690
-piranha psin*pcos no trunc.      5.0      4670
+flint fmpq_poly_mul()            0.27       88
+piranha psin*pcos trunc.         0.7       690
+piranha psin*pcos no trunc.      1.0       975
+piranha-kronecker trunc.         0.64      680
+piranha-kronecker no trunc.      1.15      925
 pari sin(x)*cos(x)              11        1400
 ```

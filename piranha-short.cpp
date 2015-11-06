@@ -19,12 +19,12 @@ using pt = polynomial<rational,monomial<short>>;
 benchpress::auto_register CONCAT2(register_, __LINE__)(("piranha"),
     ([](benchpress::context* ctx) {
     
-//    pt::set_auto_truncate_degree(1000);
+    //pt::set_auto_truncate_degree(1000);
     
     pt psin{0}, pcos{1}, x{"x"}, p;
     integer prod{1};
     
-    for (unsigned int i=0; i<100; i++) {
+    for (unsigned int i=0; i<500; i++) {
         const short j = 2*i + 1;
         if (i != 0)
             prod *= 1-j;
@@ -33,7 +33,7 @@ benchpress::auto_register CONCAT2(register_, __LINE__)(("piranha"),
     }
 
     prod = 1;
-    for (unsigned int i=1; i<100; i++) {
+    for (unsigned int i=1; i<500; i++) {
         const short j = 2*i;
         prod *= 1-j;
         prod *= j;
